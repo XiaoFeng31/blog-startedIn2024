@@ -107,12 +107,37 @@ const homePage = () => {
                   </div>
                 </div>
                 </div>
-              </div>
+              </div> 
             ))
             }</div>
         </main>
-        <aside className="col-span-4 h-full w-full">
-          这是边页面
+        <aside className="col-span-4 flex h-full w-full flex-col space-y-4 p-6">
+          <div>
+            <h3>可能感兴趣的人</h3>
+            <div className='flex flex-col space-y-4'>
+              {
+                Array.from({ length: 4}).map((_, i) => (
+                  <div
+                    key={i}
+                    className='flex flex-row items-center space-x-4'
+                  >
+                    <div className='bg-gray-500 w-10 h-10 rounded-full'>
+
+                    </div>
+                    <div>
+                      <div className='text-gray-900 font-bold'>Lorem ipsum</div>
+                      <div className='text-xs'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, tempore.</div>
+                    </div>
+                    <div>
+                      <button className="flex items-center space-x-2 rounded-3xl border border-gray-800 px-4 py-1.5 font-semibold">
+                          Follow
+                      </button>
+                    </div>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
         </aside>
       </section>
     </div>
