@@ -126,7 +126,7 @@ const homePage = () => {
                     </div>
                     <div>
                       <div className='text-gray-900 font-bold'>Lorem ipsum</div>
-                      <div className='text-xs'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, tempore.</div>
+                      <div className='text-xs'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, tempore测试.</div>
                     </div>
                     <div>
                       <button className="flex items-center space-x-2 rounded-3xl border border-gray-800 px-4 py-1.5 font-semibold">
