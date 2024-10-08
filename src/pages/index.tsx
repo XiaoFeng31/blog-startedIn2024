@@ -113,7 +113,7 @@ const homePage = () => {
         </main>
         <aside className="col-span-4 flex h-full w-full flex-col space-y-4 p-6">
           <div>
-            <h3>可能感兴趣的人</h3>
+            <h3 className='my-6 text-lg font-semibold'>可能感兴趣的人</h3>
             <div className='flex flex-col space-y-4'>
               {
                 Array.from({ length: 4}).map((_, i) => (
@@ -132,6 +132,27 @@ const homePage = () => {
                       <button className="flex items-center space-x-2 rounded-3xl border border-gray-800 px-4 py-1.5 font-semibold">
                           Follow
                       </button>
+                    </div>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
+          <div>
+            <h3 className='my-6 text-lg font-semibold'>正在阅读</h3>
+            <div className='flex flex-col space-y-4'>
+              {
+                Array.from({ length: 4 }).map((_, i) => (
+                  <div key={i} className="group flex items-center space-x-6">
+                    <div className='aspect-square h-ful w-2/5 rounded-xl bg-gray-300'></div>
+                    <div className='flex w-3/5 flex-col space-y-2'>
+                      <div className='text-lg font-semibold decoration-indigo-600 group-hover:underline'>Lorem ipsum dolor sit amet</div>
+                      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                      <div className='flex w-full items-center space-x-4'>
+                        <div className='h-8 w-8 rounded-full bg-gray-300'></div>
+                        <div>徐晓锋 &#x2022;</div>
+                        <div>Oct 08, 2024</div>
+                      </div>
                     </div>
                   </div>
                 ))
